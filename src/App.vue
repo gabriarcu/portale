@@ -1,5 +1,11 @@
 <template>
   <v-card color="grey-lighten-4" flat height="200px" rounded="1">
+    <nav>
+    <router-link to="/">Home</router-link> |
+    <router-link to="/about">About</router-link> |
+    <router-link to="/users">Utenti</router-link> |
+    <router-link to="/prodotti">Prodotti</router-link>
+  </nav>
     <v-toolbar color="primary" dark flat>
       <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
 
@@ -20,6 +26,7 @@
       </v-btn>
     </v-toolbar>
   </v-card>
+  
   <!-- <v-navigation-drawer v-model="drawer" temporary>
     <v-list-item prepend-avatar="https://randomuser.me/api/portraits/men/78.jpg" title="John Leider"></v-list-item>
 
